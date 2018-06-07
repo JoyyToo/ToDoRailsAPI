@@ -1,4 +1,3 @@
-# spec/models/item_spec.rb
 require 'rails_helper'
 
 # Test suite for the Item model
