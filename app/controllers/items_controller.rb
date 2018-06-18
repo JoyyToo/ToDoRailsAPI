@@ -4,7 +4,7 @@ class ItemsController < ApplicationController
 
   # GET /todos/:todo_id/items
   def index
-    json_response(@todo.items)
+    json_response(@todo.items.paginate(page: params[:page], per_page: 5))
   end
 
   # GET /todos/:todo_id/items/:id
